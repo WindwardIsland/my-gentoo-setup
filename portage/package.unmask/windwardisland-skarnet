@@ -1,6 +1,0 @@
-dev-libs/skalibs::windwardisland
-dev-lang/execline::windwardisland
-sys-apps/s6::windwardisland
-sys-apps/s6-rc::windwardisland
-sys-apps/s6-linux-init::windwardisland
-sys-apps/s6-frontend::windwardisland
