@@ -77,8 +77,9 @@ dev-texlive/texlive-fontsrecommended
 x11-themes/papirus-icon-theme
 media-sound/pavucontrol
 x11-misc/picom
-media-sound/playerctl
 dev-python/pip
+media-sound/playerctl
+x11-misc/polybar
 media-sound/qpwgraph
 gui-apps/qt6ct
 dev-qt/qtsvg
