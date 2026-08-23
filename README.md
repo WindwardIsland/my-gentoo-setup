@@ -21,6 +21,11 @@ Generate the EFI files (depending on the kernel used):
 ```
 (chroot) livecd # emerge --config sys-kernel/gentoo-kernel{-bin}
 ```
+## Packages List
+These are the packages that I usually install during the Gentoo installation process. To avoid typing them all out as part of `emerge`, the following command can be run as a shorthand:
+```
+(chroot) livecd # xargs -d '\n' -a package_list emerge
+```
 
 ## s6 init system setup
 > [!TIP]
