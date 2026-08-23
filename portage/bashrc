@@ -1,7 +1,11 @@
-post_pkg_postinst() { 
-	s6-sv-hook -i ${PN} || true 
-}
-post_pkg_postrm() { 
-	s6-sv-hook -r ${PN} || true 
-}
+case "${CATEGORY}/${PN}" in
+	"sys-fs/cryptsetup"|"sys-fs/lvm2"|"net-misc/ntp")
+		post_pkg_postinst() { :; }
+		post_pkg_postrm() { :; }
+		;;
+	*)
+		post_pkg_postinst() { s6-sv-hook -i "${PN}" || true; }
+		post_pkg_postrm() { s6-sv-hook -r "${PN}" || true; }
+		;;
+esac	
 

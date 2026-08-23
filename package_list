@@ -118,6 +118,3 @@ net-misc/localsend-bin::windwardisland
 www-client/ungoogled-chromium-bin::pf4public
 net-im/vesktop-bin::guru
 x11-misc/nitrogen
---exclude=sys-fs/cryptsetup
---exclude=sys-fs/lvm2
---exclude=net-misc/ntp
