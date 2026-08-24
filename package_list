@@ -16,8 +16,6 @@ net-print/cups-filters
 net-print/cups-pdf
 net-print/gutenprint
 net-print/cnijfilter2
-net-print/foomatic-db
-net-print/foomatic-db-engine
 sys-fs/udisks
 sys-fs/udiskie
 app-arch/unrar
