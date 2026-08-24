@@ -48,6 +48,7 @@ media-libs/harfbuzz
 x11-wm/herbstluftwm
 media-gfx/imagemagick
 net-misc/inetutils
+media-gfx/inkscape
 net-mail/isync
 sys-apps/inxi
 dev-libs/jsoncpp
