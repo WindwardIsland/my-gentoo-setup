@@ -52,7 +52,7 @@ net-mail/isync
 sys-apps/inxi
 dev-libs/jsoncpp
 app-misc/jq
-kde-apps/kdenlive
+media-gfx/blender-bin
 media-libs/libmpdclient
 sci-libs/libqalculate
 media-gfx/maim
