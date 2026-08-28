@@ -20,7 +20,7 @@ install() {
 			DATA="$(curl -Ls "${MIRROR_URL}/${REPO}/os/x86_64")"
 
 			if [ $? -eq 0 ] && [ -n "${DATA}" ]; then
-				echo "${DATA}" | grep -v "\.sig" | grep -oP "(?<=href=\").+?-s6(?=-[0-9]+)"
+				echo "${DATA}" | grep -v "\.sig" | grep -oP "(?<=href=\").+?(?=-s6-[0-9]+)"
 				return 0
 			else
 				echo -e "===\n" >&2
