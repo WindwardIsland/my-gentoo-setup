@@ -11,6 +11,7 @@ setup_base() {
 
 setup_system() {
 	git clone https://gitea.artixlinux.org/artix/s6-scripts
+	sed -i "s:udevd:/lib/systemd/systemd-udevd:g" s6-scripts/udevd-srv/run
 	sed -i "s/etmpfiles/systemd-tmpfiles/g" s6-scripts/tmpfiles-{dev,setup}/up
 	sed -i "s/esysusers/systemd-sysusers/g" s6-scripts/sysusers/up
 	sed -i "s:/usr/lib/artix:/etc/s6/utilities:g" s6-scripts/{binfmt,mount-cgroups}/up

@@ -1,3 +1,4 @@
+sys-apps/systemd-utils
 sys-apps/dbus
 sys-auth/elogind
 net-misc/connman
