@@ -4,6 +4,7 @@ sys-auth/elogind
 net-misc/dhcpcd
 net-wireless/iwd
 sys-boot/efibootmgr
+app-admin/sudo
 sys-apps/man-db
 sys-apps/man-pages
 media-video/pipewire
