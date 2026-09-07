@@ -103,7 +103,7 @@ install() {
 			
 	else
 		echo -e "==="
-		echo -e "==> ${0} -- ERROR: ${PACKAGE} does not have an equivalent s6 service script. <=="
+		echo -e "==> ${0} -- ERROR: ${PACKAGE} does not have an equivalent s6 service script to install. <=="
 		echo -e "===\n"
 		exit 1
 	fi
