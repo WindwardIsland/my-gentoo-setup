@@ -1,7 +1,7 @@
 sys-apps/systemd-utils
 sys-apps/dbus
 sys-auth/elogind
-net-misc/connman
+net-wireless/iwd
 sys-boot/efibootmgr
 sys-apps/man-db
 sys-apps/man-pages
