@@ -1,4 +1,0 @@
-#!/usr/bin/execlineb -P
-
-importas -S HOME
-exec s6-log -d3 -- T ${HOME}/.config/s6/logs/mate-polkit

@@ -1,7 +1,0 @@
-#!/usr/bin/execlineb -P
-
-importas -S HOME
-fdmove -c 2 1
-
-envfile ${HOME}/.config/s6/user-envfile
-exec /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
