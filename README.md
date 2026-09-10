@@ -112,6 +112,7 @@ $ cd s6
 $ ./s6_setup user <non-root user>
 ```
 Go to the location where the user services are installed (default: `~/.config/s6`). Run the following commands to initialize the repository and create the database:
+- `$ export S6_CONF="${HOME}/.config/s6/s6-frontend.conf"`
 - `$ s6 repo init`
 - `$ s6 repo list`
 - If the previous command returned nothing: `s6-rc-set-new -r "${HOME}/.config/s6/repo" current`
