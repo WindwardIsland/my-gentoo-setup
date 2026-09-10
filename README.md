@@ -119,7 +119,7 @@ Go to the location where the user services are installed (default: `~/.config/s6
 - `$ s6 set status`
 - `$ s6 set enable/disable <servicenames>`
 - `$ s6 set commit`
-- `$ s6 live install`
+- `$ s6 live install --init`
 
 Log out (or reboot), and all the enabled user services should've started successfully!
 
