@@ -2,11 +2,11 @@
 
 setup_base() {
 	mkdir -pv /etc/s6/{repo,sv-skel,rc}
-	cp -rv utilities /etc/s6/
-	cp -v s6-sv-hook /usr/bin/
-	cp -v ../locale.sh /etc/profile.d/
-	cp -v s6.conf /etc/
-	cp -v s6log.conf /usr/lib/sysusers.d/
+	cp -av utilities /etc/s6/
+	cp -av s6-sv-hook /usr/bin/
+	cp -av ../locale.sh /etc/profile.d/
+	cp -av s6.conf /etc/
+	cp -av s6log.conf /usr/lib/sysusers.d/
 }
 
 setup_system() {
@@ -26,13 +26,15 @@ setup_system() {
 setup_user() {
 	S6_DIR="/home/${1}/.config/s6"
 
-	cp -v user-services/.xprofile "/home/${1}"
-	cp -rv user-services "${S6_DIR}"
+	mv user-services/.xprofile .
+	cp -av .xprofile "/home/${1}"
+	cp -av user-services "${S6_DIR}"
 	mkdir -v "${S6_DIR}"/{repo,db,logs,service}
+	chown -R "${1}:" "/home/${1}"
 }
 
 case ${1} in
 	base) setup_base ;;
 	system) setup_system ;;
-	user) setup_user ;;
+	user) setup_user ${2} ;;
 esac
