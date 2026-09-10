@@ -27,6 +27,7 @@ setup_user() {
 	S6_DIR="/home/${1}/.config/s6"
 
 	mv user-services/.xprofile .
+	sed -i "s/USER/${1}/g" user-services/s6-frontend.conf
 	cp -av .xprofile "/home/${1}"
 	cp -av user-services "${S6_DIR}"
 	mkdir -v "${S6_DIR}"/{repo,db,logs,service}
