@@ -1,1 +1,1 @@
-media-video/pipewire roc echo-cancel
+media-video/pipewire roc echo-cancel sound-server pipewire-alsa

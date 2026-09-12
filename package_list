@@ -10,6 +10,7 @@ sys-apps/man-pages
 media-video/pipewire
 media-video/wireplumber
 sys-auth/rtkit
+media-sound/jack2
 sys-firmware/alsa-firmware
 media-sound/alsa-tools
 media-sound/alsa-utils
